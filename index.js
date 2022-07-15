@@ -77,7 +77,7 @@ const fetchHeadlines = async () => {
 
 
 const fetchGeneralNews = async () => {
-    const response = await fetch(HEALTH_NEWS+API_KEY);
+    const response = await fetch(HEALTH_NEWS);
     newsDataArr = [];
     if(response.status >=200 && response.status < 300) {
         const myJson = await response.json();
@@ -93,7 +93,7 @@ const fetchGeneralNews = async () => {
 }
 
 const fetchBusinessNews = async () => {
-    const response = await fetch(BUSINESS_NEWS+API_KEY);
+    const response = await fetch(BUSINESS_NEWS);
     newsDataArr = [];
     if(response.status >=200 && response.status < 300) {
         const myJson = await response.json();
@@ -109,7 +109,7 @@ const fetchBusinessNews = async () => {
 }
 
 const fetchEntertainmentNews = async () => {
-    const response = await fetch(ENTERTAINMENT_NEWS+API_KEY);
+    const response = await fetch(ENTERTAINMENT_NEWS);
     newsDataArr = [];
     if(response.status >=200 && response.status < 300) {
         const myJson = await response.json();
@@ -126,7 +126,7 @@ const fetchEntertainmentNews = async () => {
 }
 
 const fetchSportsNews = async () => {
-    const response = await fetch(SPORTS_NEWS+API_KEY);
+    const response = await fetch(SPORTS_NEWS);
     newsDataArr = [];
     if(response.status >=200 && response.status < 300) {
         const myJson = await response.json();
@@ -142,7 +142,7 @@ const fetchSportsNews = async () => {
 }
 
 const fetchTechnologyNews = async () => {
-    const response = await fetch(TECHNOLOGY_NEWS+API_KEY);
+    const response = await fetch(TECHNOLOGY_NEWS);
     newsDataArr = [];
     if(response.status >=200 && response.status < 300) {
         const myJson = await response.json();
